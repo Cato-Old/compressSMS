@@ -14,7 +14,14 @@ public class OptimalCompressorTest {
 
     @Test
     public void optimalTest(){
-        String testString = "Ala ma kota";
-        assertTrue(testString.length() > compr.compress(testString).length());
+        String testString = "Ala ma kota, kot ma Alę";
+        assertTrue(testString.length() >= compr.compress(testString).length());
+    }
+
+    @Test
+    public void decompressTest(){
+        String testString = "Ala ma kota, kot ma Alę";
+        String compressedString = compr.compress(testString);
+        assertEquals(testString, compr.decompress(compressedString));
     }
 }

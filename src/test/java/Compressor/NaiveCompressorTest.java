@@ -1,7 +1,5 @@
 package Compressor;
 
-import Compressor.Compressor;
-import Compressor.NaiveCompressor;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -32,5 +30,12 @@ public class NaiveCompressorTest {
     @Test
     public void naivePolishTest(){
         assertEquals("AlaŚciełaŚcianę",compr.compress("Ala ścięła ścianę"));
+    }
+
+    @Test
+    public void decompressTest(){
+        String testString = "Ala ma kota, kot ma Alę";
+        String compressedString = compr.compress(testString);
+        assertEquals(testString.toLowerCase(),compr.decompress(compressedString).toLowerCase());
     }
 }
