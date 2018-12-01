@@ -1,5 +1,5 @@
 public class Paginator {
-    private static final int SMS_LENGHT;
+    private final int SMS_LENGHT;
 
     Paginator(int lenght){
         SMS_LENGHT = lenght;

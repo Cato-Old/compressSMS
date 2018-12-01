@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 
 public class CostCalculator {
-    private static final BigDecimal UNIT_PRICE;
+    private final BigDecimal UNIT_PRICE;
 
     CostCalculator(BigDecimal unitPrice){
         UNIT_PRICE = unitPrice;
