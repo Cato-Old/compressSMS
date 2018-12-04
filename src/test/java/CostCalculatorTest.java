@@ -10,11 +10,17 @@ import java.math.BigDecimal;
 public class CostCalculatorTest {
 
     @Test
-    @Parameters(method="calcValues")
-    public void calcConstructTest(BigDecimal unitPrice, int num, BigDecimal exp){
+    @Parameters(method = "calcValues")
+    public void calcValuesTest(BigDecimal unitPrice, int num, BigDecimal exp){
         CostCalculator calc = new CostCalculator(unitPrice);
         assertEquals(exp,calc.calculate(num));
 
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    @Parameters(method = "calcConstruct")
+    public void calcConstructTest(BigDecimal unitPrice){
+        new CostCalculator(unitPrice);
     }
 
     private Object[] calcValues(){
@@ -22,5 +28,12 @@ public class CostCalculatorTest {
                 new Object[]{new BigDecimal(0), 20, new BigDecimal(0)},
                 new Object[]{new BigDecimal(0.3), 20, new BigDecimal(6)},
                 new Object[]{new BigDecimal(0.3), 0, new BigDecimal(0)}};
+    }
+
+    private Object[] calcConstruct(){
+        return new Object[]{
+                new BigDecimal(-1),
+                new BigDecimal(1.001)
+        };
     }
 }
