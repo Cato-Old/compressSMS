@@ -29,7 +29,7 @@ public class NaiveCompressorTest {
 
     @Test
     public void naivePolishTest(){
-        assertEquals("AlaŚciełaŚcianę",compr.compress("Ala ścięła ścianę"));
+        assertEquals("AlaŚcięłaŚcianę",compr.compress("Ala ścięła ścianę"));
     }
 
     @Test

@@ -25,7 +25,8 @@ public class PaginatorTest {
         return new Object[]{
                 new Object[]{"ALAMAKOTA", 4, new String[]{"ALAM","AKOT","A"}},
                 new Object[]{"ala ma kota", 2, new String[]{"al","a ","ma"," k", "ot","a"}},
-                new Object[]{"ala ", 5, new String[]{"ala "}}
+                new Object[]{"ala ", 5, new String[]{"ala "}},
+                new Object[]{"ALAMAKOTA", 3, new String[]{"ALA","MAK","OTA"}}
         };
     }
 }
