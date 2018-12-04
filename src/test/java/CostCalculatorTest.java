@@ -25,9 +25,9 @@ public class CostCalculatorTest {
 
     private Object[] calcValues(){
         return new Object[]{
-                new Object[]{new BigDecimal(0), 20, new BigDecimal(0)},
-                new Object[]{new BigDecimal(0.3), 20, new BigDecimal(6)},
-                new Object[]{new BigDecimal(0.3), 0, new BigDecimal(0)}};
+                new Object[]{new BigDecimal("0.00"), 20, new BigDecimal("0.00")},
+                new Object[]{new BigDecimal("0.30"), 20, new BigDecimal("6.00")},
+                new Object[]{new BigDecimal("0.30"),  0, new BigDecimal("0.00")}};
     }
 
     private Object[] calcConstruct(){

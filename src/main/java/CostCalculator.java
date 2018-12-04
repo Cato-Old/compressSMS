@@ -4,10 +4,14 @@ public class CostCalculator {
     private final BigDecimal UNIT_PRICE;
 
     CostCalculator(BigDecimal unitPrice){
-        UNIT_PRICE = unitPrice;
+        if (unitPrice.scale() <= 2 && unitPrice.doubleValue() >= 0) {
+            UNIT_PRICE = unitPrice;
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
     public BigDecimal calculate(int lenght){
-        return null;
+        return UNIT_PRICE.multiply(new BigDecimal(lenght));
     }
 }
