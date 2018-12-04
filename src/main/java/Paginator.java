@@ -4,8 +4,12 @@ import java.util.List;
 public class Paginator {
     private final int SMS_LENGHT;
 
-    Paginator(int lenght){
-        SMS_LENGHT = lenght;
+    Paginator (int lenght) throws IllegalArgumentException {
+        if (lenght > 0){
+            SMS_LENGHT = lenght;
+        } else {
+            throw new IllegalArgumentException();
+        }
     }
 
     public String[] paginate(String text){

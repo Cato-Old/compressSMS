@@ -50,15 +50,15 @@
           <entry key="MD" value="53" />
           <entry key="gitignore" value="3" />
           <entry key="gradle" value="3" />
-          <entry key="java" value="4480" />
-          <entry key="txt" value="228" />
+          <entry key="java" value="4542" />
+          <entry key="txt" value="262" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="4480" />
-          <entry key="PLAIN_TEXT" value="284" />
+          <entry key="JAVA" value="4542" />
+          <entry key="PLAIN_TEXT" value="318" />
         </counts>
       </usages-collector>
     </session>
@@ -138,12 +138,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Paginator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#85#86#0" expanded="true" />
-                <element signature="e#120#121#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -578,7 +576,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543932720173" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543932996389" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -595,7 +593,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PaginatorTest.paginatorValuesTest">
+  <component name="RunManager" selected="JUnit.PaginatorTest">
     <configuration name="All in sms_compress_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sms_compress_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -614,10 +612,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NaiveCompressorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaginatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sms_compress_test" />
-      <option name="PACKAGE_NAME" value="Compressor" />
-      <option name="MAIN_CLASS_NAME" value="Compressor.NaiveCompressorTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PaginatorTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -643,19 +641,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.NaiveCompressorTest" />
       <item itemvalue="JUnit.All in sms_compress_test" />
       <item itemvalue="JUnit.CostCalculatorTest.calcConstructTest" />
       <item itemvalue="JUnit.PaginatorTest.paginatorConstructTest" />
       <item itemvalue="JUnit.PaginatorTest.paginatorValuesTest" />
+      <item itemvalue="JUnit.PaginatorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaginatorTest" />
         <item itemvalue="JUnit.PaginatorTest.paginatorValuesTest" />
         <item itemvalue="JUnit.PaginatorTest.paginatorConstructTest" />
         <item itemvalue="JUnit.CostCalculatorTest.calcConstructTest" />
         <item itemvalue="JUnit.All in sms_compress_test" />
-        <item itemvalue="JUnit.NaiveCompressorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -747,7 +745,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543931484250</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="implementing method paginate in class Paginator">
+      <created>1543932771551</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543932771551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -766,6 +771,9 @@
     <history-entry file="PaginatorTest_paginatorValuesTest - 2018.12.04 at 15h 05m 43s.xml">
       <configuration name="PaginatorTest.paginatorValuesTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PaginatorTest_paginatorValuesTest - 2018.12.04 at 15h 10m 48s.xml">
+      <configuration name="PaginatorTest.paginatorValuesTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -780,7 +788,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50067115" side_tool="true" weight="0.24966443" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -789,7 +797,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32885906" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32885906" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -845,7 +853,8 @@
     <MESSAGE value="implementing test" />
     <MESSAGE value="implementing param tests" />
     <MESSAGE value="implementing param tests for constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing param tests for constructors" />
+    <MESSAGE value="implementing method paginate in class Paginator" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing method paginate in class Paginator" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.MD">
@@ -949,12 +958,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Paginator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#85#86#0" expanded="true" />
-            <element signature="e#120#121#0" expanded="true" />
           </folding>
         </state>
       </provider>
