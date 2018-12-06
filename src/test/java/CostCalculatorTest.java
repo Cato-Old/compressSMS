@@ -3,7 +3,6 @@ import junitparams.Parameters;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.runner.RunWith;
-
 import java.math.BigDecimal;
 
 @RunWith(JUnitParamsRunner.class)
